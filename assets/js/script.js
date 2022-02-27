@@ -1,4 +1,5 @@
 //declaring elements that exist in html;
+let timeLabelEl = document.querySelector("#timer-label");
 let timerEl = document.querySelector("#timer");
 let contentEl = document.querySelector(".content");
 let promptEl = document.querySelector("#quiz-prompt");
@@ -17,7 +18,7 @@ ansPrompt.setAttribute("class", "answer-prompt");
 
 //declaring global variables;
 let score = 0;
-let timeLeft = 80;
+let timeLeft = 60;
 let index = 0;
 
 // countdown function; to be called on start click
@@ -47,7 +48,7 @@ function renderQuiz() {
       let ansBtnEl = document.createElement("button");
       ansBtnEl.setAttribute("class", "answer");
       ansBtnEl.textContent = answers[a];
-      console.log(ansBtnEl);
+      // console.log(ansBtnEl);
       ansGroupEl.appendChild(ansBtnEl);
       //add event listener to each button and calls isCorrect function to check answer;
       ansBtnEl.addEventListener("click", isCorrect);
@@ -96,10 +97,10 @@ function isCorrect(event) {
     score += 10;
     ansPrompt.textContent = "Correct!";
     nextQuestion();
-    }
+  }
 
   let removePrompt = setTimeout(function() {
-    quizContentEl.removeChild(ansPrompt);
+    ansPrompt.remove();
   }, 1000);
 }
 

@@ -11,14 +11,15 @@
   <body>
     <header id="header">
       <a id="high-scores" href="highscores.html">High Scores!!</a>
-      <div>Time: <span id="timer">0</span></div>
+      <div id="timer-label">Time: <span id="timer">0</span></div>
     </header>
 
     <main>
-      <section class = "content">
+      <section class="content">
         <article id="quiz-prompt">
           <h1>Want to test your understanding of introductory javascript concepts?</h1>
-            <p>Answer the following questions and see how you do, but keep in mind the quiz is timed! 
+            <p>Answer the following questions and see how you do, but keep in mind the quiz is timed!<br> 
+              If your time runs out before you finish answering all the questions, you will be sent to the quiz results section.<br>
               A wrong answer will take 10 seconds off your time, but a right answer will add 10 points to your score.</p>
             <button id="start">Start</button>
         </article>
@@ -26,7 +27,7 @@
     </main>
 
     <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/highscores.js"></script>
+    <script src="./assets/js/scores.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 
