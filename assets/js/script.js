@@ -5,7 +5,6 @@ let contentEl = document.querySelector(".content");
 let promptEl = document.querySelector("#quiz-prompt");
 let startBtnEl = document.querySelector("#start");
 
-
 // declare elements that need to be created then appended to html;
 let quizContentEl = document.createElement("article");
 quizContentEl.setAttribute("class", "quiz-content");
