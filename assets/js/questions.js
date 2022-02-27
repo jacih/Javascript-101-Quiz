@@ -4,7 +4,7 @@ let qandAs = [{
     correct: "const, var, let",
   },
   {
-    quest: "What is the first index of a javascript object",
+    quest: "What is the first index of a javascript object?",
     ans: ["indexOf(1)", "1", "0", "-1"],
     correct: "0", 
    },

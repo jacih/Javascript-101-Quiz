@@ -9,7 +9,7 @@ let startBtnEl = document.querySelector("#start");
 let quizContentEl = document.createElement("article");
 quizContentEl.setAttribute("class", "quiz-content");
 let questionEl = document.createElement("h2");
-questionEl.setAttribute("class", "questionEl");
+questionEl.setAttribute("class", "questions");
 let ansGroupEl = document.createElement("div");
 ansGroupEl.setAttribute("class", "answer-group");
 let ansPrompt = document.createElement("p");
