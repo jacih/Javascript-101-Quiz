@@ -1,6 +1,7 @@
 let scoresEl = document.querySelector("#scores-card");
 let highListEl = document.createElement("ul");
-highListEl.setAttribute("class", "highscores-list");
+highListEl.setAttribute("id", "highscores-list");
+scoresEl.appendChild(highListEl);
 
 let highscores = {
   initials:[],
@@ -9,11 +10,12 @@ let highscores = {
 
 function quizResults() {
   hide(timeLabelEl);
+  hide(quizContentEl);
   
   let quizResEl = document.createElement("article");
   quizResEl.setAttribute("id", "quiz-results");
   let resHeadEl = document.createElement("h1");
-  resHeadEl.textContent = "All done!"
+  resHeadEl.textContent = "Congrats - The Quiz is Over!"
   let finalScoreEl = document.createElement("p");
   finalScoreEl.textContent = "Your final score is " + score + " out of " + (qandAs.length * 10) + ".";
   let scoresPromptEl = document.createElement("p");
@@ -21,7 +23,7 @@ function quizResults() {
   let resformEl = document.createElement("form");
   resformEl.setAttribute("id", "quiz-form");
   let userLabelEl = document.createElement("label");
-  userLabelEl.textContent = "Enter initials: ";
+  userLabelEl.textContent = "Enter initials:";
   let userInputEl = document.createElement("input");
   userInputEl.setAttribute("type", "text");
   let formBtnsEl = document.createElement("div");
@@ -42,7 +44,7 @@ function quizResults() {
   quizResEl.appendChild(finalScoreEl);
   quizResEl.appendChild(scoresPromptEl);
   quizResEl.appendChild(resformEl); 
-  contentEl.replaceWith(quizResEl);
+  contentEl.appendChild(quizResEl);
 
   submitEl.addEventListener("click", function(e) {
     e.preventDefault();
@@ -50,7 +52,7 @@ function quizResults() {
       return null;
     }
     saveScore(userInputEl.value, score);
-    window.location = "highscores.html";
+    location.href = "highscores.html";
   });
 
   resetEl.addEventListener("click", function(e) {
@@ -74,15 +76,17 @@ function renderScores() {
     let scorers = scoresList.initials;
     for (let i = 0; i < scorers.length; i++) {
       let userEl = document.createElement("ol");
-      userEl.textContent = scorers[i] + " - " + scoresList.scores[i];
+      userEl.textContent = (i+1) +". " + scorers[i] + " - " + scoresList.scores[i] + "pts";
       
       highListEl.appendChild(userEl);
-      scoresEl.appendChild(highListEl);
     }
   }
   let clearBtnEl = document.createElement("button");
   clearBtnEl.setAttribute("id", "clearBtn")
   clearBtnEl.textContent = "Clear Scores";
+  highListEl.appendChild(clearBtnEl);
+  
+
 
   clearBtnEl.addEventListener("click", function(e) {
     e.stopPropagation();

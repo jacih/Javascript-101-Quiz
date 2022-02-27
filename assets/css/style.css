@@ -5,13 +5,12 @@
     --brite: #60ff58;
     --med: #818181;
     --lite: #c5c5c5;
-    --litefade: #c5c5c583;
+    --litefade: #c5c5c5a2;
     --white: #ffffff;
 }
 
 body {
     display: block;
-    background-color: var(--white);
     text-align: center;
     font-size: 18px;
     background-image: url("/Users/jacquelinehodgson/Desktop/UTorCoding/Homework/Javascript-101-Quiz/assets/images/Deposit_Imgs_AbstractPrgmCode.jpg");
@@ -36,7 +35,7 @@ body {
     text-shadow: 0px 0px 20px var(--black);
 }
 
-#high-scores:hover {
+#high-scores:hover, #quiz-home:hover {
     color: var(--white);
     text-shadow: 0px 0px 15px var(--brite);
 }
@@ -55,7 +54,7 @@ body {
     align-content: space-around;
 }
 
-#quiz-prompt {
+.quiz-content, #quiz-prompt, #quiz-results, #scores-card {
     position: absolute;
     top: 25%;
     margin-top: 150px;
@@ -70,58 +69,21 @@ body {
     background-color: var(--litefade);
 }
 
-#prompt-title {
+h1 {
     font-size: 24px;
+    color: var(--black);
     font-weight: bolder;
-    text-shadow: 0px 0px 15px var(--drkst);
+    text-shadow: 0px 0px 15px var(--brite);
+    padding-bottom: 5px;
+    text-decoration: underline;
+    text-decoration-color: var(--brite);    
 }
 
 p {
     text-shadow: 0px 0px 15px var(--drkst);
 }
 
-#start {
-    background-color: var(--med);
-    box-shadow: 0px 0px 10px var(--black);
-    border-color: var(--med);
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 4px 20px 4px 20px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#start:hover {
-    box-shadow: 0px 0px 10px var(--brite);
-    color: var(--white);    
-}
-
-.quiz-content {
-    position: absolute;
-    top: 25%;
-    margin-top: 150px;
-    text-align: center;
-    border-color: var(--brite);
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 25px #57ec4fb4;
-    padding: 50px 15px 50px 15px;
-    max-width: 800px;
-    background-color: var(--litefade);
-}
-
-.questions {
-    font-weight: bolder;
-    text-shadow: 0px 0px 15px var(--drkst);
-}
-
-.answer-group {
-    margin-top: 40px;
-}
-
-.answer {
+button {
     background-color: var(--med);
     box-shadow: 0px 0px 10px var(--black);
     border-color: var(--med);
@@ -133,22 +95,85 @@ p {
     font-weight: bold;
 }
 
-.answer:hover {
+button:hover {
     box-shadow: 0px 0px 10px var(--brite);
     color: var(--white);    
 }
 
+#start {
+    margin-top: 25px;
+    margin-bottom: -8px;
+    font-size: 18px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 30px;
+}
+
+.questions {
+    font-weight: bolder;
+    text-shadow: 0px 0px 15px var(--brite);
+}
+
+.answer-group {
+    margin-top: 30px;
+}
+
 .answer-prompt {
     font-weight: bolder;
+    font-size: 20px;
     color: var(--brite);
     text-shadow: 0px 0px 10px var(--drk);
     padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: -10px; 
 }
 
-#reset {
-
+#quiz-results p { 
+    font-weight: bold;
+    font-size: 20px;
 }
 
-#clear {
+#quiz-results label { 
+    font-weight: bolder;
+    text-decoration: underline;
+    text-shadow: 0px 0px 15px var(--drkst);
+    margin-top: 5px;
+}
 
+#res-form-btns {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+nav {
+   padding-top: 15px;
+   padding-bottom: 20px; 
+}
+
+#quiz-home {
+    color: var(--brite);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 20px 0px 0px 20px;
+    text-shadow: 0px 0px 20px var(--black);
+}
+
+#highscores-list {
+    text-align: left;
+    margin-left: 10px;
+}
+
+#highscores-list ol {
+    margin-bottom: 10px;
+}
+
+#clearBtn {
+    background-color: var(--med);
+    box-shadow: 0px 0px 10px var(--black);
+    border-color: var(--med);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-left: 50px;
+    font-weight: bold;
 }
