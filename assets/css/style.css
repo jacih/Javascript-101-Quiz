@@ -1,0 +1,68 @@
+:root {
+    --black: #000000;
+    --drkst: #032a01;
+    --drk:  #236b20;
+    --brite: #57ec4f;
+    --med: #e0ca08;
+    --lite: #f6e978;
+    --white: #ffffff;
+}
+
+body {
+    display: block;
+    background-color: var(--drk);
+    text-align: center;
+    font-size: 16px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#high-scores {
+
+}
+
+#timer {
+
+}
+
+#quiz-prompt {
+
+}
+
+#quiz-cards {
+
+}
+
+#quiz-cards h1 {
+
+}
+
+#results {
+
+}
+
+#results h2 {
+
+}
+
+#submit {
+    
+}
+
+#scores-page {
+
+}
+
+#reset {
+
+}
+
+#clear {
+
+}
