@@ -30,7 +30,7 @@ ansPrompt.setAttribute('class', 'answer-prompt');
 let score = 0;
 let timeLeft = 60;
 let index = 0;
-let stored = [];
+let stored = JSON.parse(localStorage.getItem('High Scores')) || [];
 
 // countdown function; to be called on start click
 const timerCountdown = () => { 
@@ -82,13 +82,13 @@ const isCorrect = (event) => {
   if (choice !== rightAns) {
     !(isCorrect);
     ansPrompt.textContent = 'Incorrect!';
-      if (timeLeft <= 10) {
-        timeLeft = 0;
-        saveResults();
-      } else {
+      if (timeLeft > 10) {
         timeLeft -= 10;
+        nextQuestion();
+      } else  if (timeLeft = 0) {
+        clearInterval(timerInterval);
+        saveResults();
       }
-    nextQuestion();
   } else {
     (isCorrect);
     score += 10;
@@ -98,14 +98,15 @@ const isCorrect = (event) => {
 
   const removePrompt = setTimeout(function() {
     ansPrompt.remove();
-  }, 1000);
+  }, 500);
 }
 
 const nextQuestion = () => {  
   if (index <= qandAs.length - 1) {
     renderQuiz(index++);
   }
-  if (index > 8) {
+  if (index === qandAs.length) {
+  clearInterval(timerInterval);
   saveResults();
   }
 }
@@ -134,7 +135,7 @@ const saveResults = () => {
     } else {
       stored.push(user);
       initials = '';
-      localStorage.setItem('High Scores', JSON.stringify(user))
+      localStorage.setItem('High Scores', JSON.stringify(stored))
       showHighScores();
     }
   });
@@ -167,8 +168,10 @@ const show = (e) => {
 
 // navigational button event listeners
 scoresBtnEl.addEventListener('click', function(e) {
-  e.preventDefault();
   e.stopPropagation();
+  e.preventDefault();
+  hide(promptEl);
+  hide(quizContentEl);
   showHighScores();
 });
 

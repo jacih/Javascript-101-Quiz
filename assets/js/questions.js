@@ -10,7 +10,7 @@ let qandAs = [{
    },
    {
     quest: 'What data type are undefined, null, symbol, and bigint examples of?',
-    ans: ['Non-Primative', 'Operands', 'Authentic', 'Primitive'],
+    ans: ['Non-Primitive', 'Operands', 'Authentic', 'Primitive'],
     correct: 'Primitive',
    },
    {
