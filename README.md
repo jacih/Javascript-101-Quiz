@@ -38,9 +38,9 @@ This application is not currently accepting contributions.
 ## [Tests](#table-of-contents)
 There is no test suite for this application.
 
-## [Links)(#table-of-contents)
-[GitHub Repo](https://github.com/jacih/Javascript-101-Quiz.git)
-[Staging Link](https://jacih.github.io/Javascript-101-Quiz/)
+## [Links](#table-of-contents)
+- [GitHub Repo](https://github.com/jacih/Javascript-101-Quiz.git)
+- [Staging Link](https://jacih.github.io/Javascript-101-Quiz/)
 
 ## [Questions](#table-of-contents)
 Contact me through [GitHub](https://github.com/jacih)
