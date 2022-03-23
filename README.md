@@ -18,6 +18,8 @@ This application is a simple vanilla-Javascript written quiz about basic Javascr
 ## [Mock-Up](#table-of-contents)
 ![JS_Quiz_Main_Mockup](https://user-images.githubusercontent.com/97176042/159719181-a829ed10-09af-45ea-804d-11ce4ef16a56.png)
 ![JS_Quiz_Panel_Mockup](https://user-images.githubusercontent.com/97176042/159719206-c739cffc-7f2c-4952-add1-43deb5921a4b.jpg)
+![JS_Quiz_ResultsForm_Mockup](https://user-images.githubusercontent.com/97176042/159743664-8d189c77-a521-4ca5-90b1-f23967ea5869.png)
+![JS_Quiz_Highscores_Mockup](https://user-images.githubusercontent.com/97176042/159743681-d28d87eb-007d-4363-a8f2-93a469ebe10e.png)
 
 ## [Installation](#table-of-contents)
 There are no additional libraries required for this program. Simply open the index.html in your default browser to play.
