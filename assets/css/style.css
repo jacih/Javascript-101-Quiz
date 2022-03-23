@@ -13,7 +13,7 @@ body {
     display: block;
     text-align: center;
     font-size: 18px;
-    background-image: url("assets/images/Deposit_Imgs_AbstractPrgmCode_RESIZED.jpg");
+    background-image: url("https://github.com/jacih/Javascript-101-Quiz/blob/445990bbf7bc1fd8aac494d9b156b1041993bef2/assets/images/Deposit_Imgs_AbstractPrgmCode_RESIZED.jpg");
     background-repeat: no-repeat;
     background-size: 1800px 900px;
     backdrop-filter: brightness(160%) blur(4px) saturate(30%) opacity(110%);
