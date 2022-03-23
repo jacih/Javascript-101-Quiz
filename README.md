@@ -16,6 +16,8 @@
 This application is a simple vanilla-Javascript written quiz about basic Javascript concepts. As the user progresses through the quiz, a quiz timer is counts down.  For each wrong answer, the timer is dynamically updated to remove 10 seconds, for every right answer, 10 points are added to the user’s score. At the end of the quiz, either through running out of time or answering all questions, the user is able to enter their initials and score into a high scores board. The additional functionality of clearing high scores has been built in with a “Clear Scores” button. The user is also provided with a “Reset Quiz” button on the High Scores board, and a “Retry” button prior to saving their name and score, incase they want to try the quiz again.
 
 ## [Mock-Up](#table-of-contents)
+![JS_Quiz_Main_Mockup](https://user-images.githubusercontent.com/97176042/159719181-a829ed10-09af-45ea-804d-11ce4ef16a56.png)
+![JS_Quiz_Panel_Mockup](https://user-images.githubusercontent.com/97176042/159719206-c739cffc-7f2c-4952-add1-43deb5921a4b.jpg)
 
 ## [Installation](#table-of-contents)
 There are no additional libraries required for this program. Simply open the index.html in your default browser to play.
