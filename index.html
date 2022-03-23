@@ -10,7 +10,7 @@
 
   <body>
     <header id="header">
-      <a id="high-scores" href="highscores.html">Check High Scores!!</a>
+      <button id="scoresBtn">Check High Scores!!</button>
       <div id="timer-label">Time: <span id="timer">0</span></div>
     </header>
 
@@ -23,11 +23,28 @@
               A wrong answer will take 10 seconds off your time, but a right answer will add 10 points to your score.</p>
             <button id="start">Start</button>
         </article>
+        <article id="quiz-results">
+          <form id="quiz-form">
+            <h1>Congrats - The Quiz is Over!</h1>
+            <p>Your final score is <span id="score"></span>.</p>
+            <label>Enter initials</label>
+            <input type="text" name="initials" id="initials" placeholder="T.K">
+            <button id="retryBtn" class="button">Try Again!</button>
+            <button id="submitBtn">Submit</button>
+          </form>
+        </article>
+        <article id="scores-card">
+          <h1>Highscores</h1>
+          <ul id ="highscores-list">
+            <!-- add highscorers here -->
+          </ul>
+          <button id="resetBtn" class="button">Reset Quiz</button>
+          <button id="clear-button" class="button">Clear Highscores</button>
+        </article>
       </section>
     </main>
 
     <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/scores.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 

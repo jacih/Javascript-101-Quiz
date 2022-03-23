@@ -27,15 +27,17 @@ body {
     margin-bottom: 20px;
 }
 
-#high-scores {
+#scoresBtn {
     color: var(--brite);
+    background: none;
     text-decoration: none;
     font-weight: bolder;
     margin: 20px 0px 0px 20px;
     text-shadow: 0px 0px 20px var(--black);
 }
 
-#high-scores:hover, #quiz-home:hover {
+#scoresBtn:hover, #quiz-home:hover {
+    background: none;
     color: var(--white);
     text-shadow: 0px 0px 15px var(--brite);
 }
